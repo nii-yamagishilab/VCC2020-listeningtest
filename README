@@ -1,0 +1,147 @@
+——————————————————————————————————————————————————————————————————————————————
+	Voice Conversion Challenge 2020 Listening Test Data
+——————————————————————————————————————————————————————————————————————————————
+
+Authors:
+Zhao Yi(1), Wen-Chin Huang(2), Xiaohai Tian(3), Junichi Yamagishi(1),
+Rohan Kumar Das(3), Tomi Kinnunen(4), Zhenhua Ling(5), Tomoki Toda(2)
+
+Affiliations:
+(1)National Institute of Informatics, Japan 
+(2)Nagoya University, Japan
+(3)National University of Singapore, Singapore
+(4)University of Eastern Finland, Finland
+(5)University of Science and Technology of China, P.R.China
+
+——————————————————————————————————————————————————————————————————————————————
+
+This fold only contains listening test data related to VCC2020.
+
+Training and evaluation dataset for VCC2020 can be found at:
+https://github.com/nii-yamagishilab/VCC2020-database
+
+——————————————————————————————————————————————————————————————————————————————
+Introduction:
+
+Voice conversion (VC) is a technique to transform a speaker identity included in a source speech waveform into a different one while preserving linguistic information of the source speech waveform.
+
+In 2016, we have launched the Voice Conversion Challenge (VCC) 2016 [1][2] at Interspeech 2016. The objective of the 2016 challenge was to better understand different VC techniques built on a freely-available common dataset to look at a common goal, and to share views about unsolved problems and challenges faced by the current VC techniques. The VCC 2016 focused on the most basic VC task, that is, the construction of VC models that automatically transform the voice identity of a source speaker into that of a target speaker using a parallel clean training database where source and target speakers read out the same set of utterances in a professional recording studio. 17 research groups had participated in the 2016 challenge. The challenge was successful and it established new standard evaluation methodology and protocols for bench-marking the performance of VC systems.
+
+In 2018, we have launched the second edition of VCC, the VCC 2018 [3]. In the second edition, we revised three aspects of the challenge. First, we educed the amount of speech data used for the construction of participant's VC systems to half. This is based on feedback from participants in the previous challenge and this is also essential for practical applications. Second, we introduced a more challenging task refereed to a Spoke task in addition to a similar task to the 1st edition, which we call a Hub task. In the Spoke task, participants need to build their VC systems using a non-parallel database in which source and target speakers read out different sets of utterances. We then evaluate both parallel and non-parallel voice conversion systems via the same large-scale crowdsourcing listening test. Third, we also attempted to bridge the gap between the ASV and VC communities. Since new VC systems developed for the VCC 2018 may be strong candidates for enhancing the ASVspoof 2015 database, we also asses spoofing performance of the VC systems based on anti-spoofing scores.
+
+In 2020, we launched the third edition of VCC, the VCC 2020 [4][5]. In this third edition, we constructed and distributed a new database for two tasks, intra-lingual semi-parallel and cross-lingual VC. The dataset for intra-lingual VC consists of a smaller parallel corpus and a larger nonparallel corpus, where both of them are of the same language. The dataset for cross-lingual VC consists of a corpus of the source speakers speaking in the source language and another corpus of the target speakers speaking in the target language. As a more challenging task than the previous ones, we focused on cross-lingual VC, in which the speaker identity is transformed between two speakers uttering different languages, which requires handling completely nonparallel training over different languages.
+
+As for listening test, we subcontracted the crowd-sourced perceptual evaluation with English and Japanese listeners to Lionbridge TechnologiesInc. and Koto Ltd.,  respectively. Given the extremely large costs required for the perceptual evaluation, we selected 5 utterances (E30001, E30002, E30003,E30004, E30005) only from each speaker of each team. To evaluate the speaker similarity of the cross-lingual task, we used audio in both the English language and in the target speaker’s L2language as reference.  For each source-target speaker pair, we selected three English recordings and two L2 language recordings as the natural reference for the converted five utterances. 
+
+[1] Tomoki Toda, Ling-Hui Chen, Daisuke Saito, Fernando Villavicencio, Mirjam Wester, Zhizheng Wu, Junichi Yamagishi "The Voice Conversion Challenge 2016" in Proc. of Interspeech, San Francisco.
+
+[2] Mirjam Wester, Zhizheng Wu, Junichi Yamagishi "Analysis of the Voice Conversion Challenge 2016 Evaluation Results" in Proc. of Interspeech 2016.
+
+[3] Jaime Lorenzo-Trueba, Junichi Yamagishi, Tomoki Toda, Daisuke Saito, Fernando Villavicencio, Tomi Kinnunen, Zhenhua Ling, "The Voice Conversion Challenge 2018: Promoting Development of Parallel and Nonparallel Methods", Proc Speaker Odyssey 2018, June 2018.
+
+[4] Yi Zhao, Wen-Chin Huang, Xiaohai Tian, Junichi Yamagishi, Rohan Kumar Das, Tomi Kinnunen, Zhenhua Ling, and Tomoki Toda. "Voice conversion challenge 2020: Intra-lingual semi-parallel and cross-lingual voice conversion" Proc. Joint Workshop for the Blizzard Challenge and Voice Conversion Challenge 2020, 80-98, DOI: 10.21437/VCC_BC.2020-14.
+
+[5] Rohan Kumar Das, Tomi Kinnunen, Wen-Chin Huang, Zhenhua Ling, Junichi Yamagishi, Yi Zhao, Xiaohai Tian, and Tomoki Toda. "Predictions of subjective ratings and spoofing assessments of voice conversion challenge 2020 submissions." Proc. Joint Workshop for the Blizzard Challenge and Voice Conversion Challenge 2020, 99-120, DOI: 10.21437/VCC_BC.2020-15.
+
+
+If your publish using any of the data in this dataset please cite the above paper [4] and [5]. This is a bibtex entry for [4] and [5].
+
+@inproceedings{Yi2020,
+  author={Zhao Yi and Wen-Chin Huang and Xiaohai Tian and Junichi Yamagishi and Rohan Kumar Das and Tomi Kinnunen and Zhen-Hua Ling and Tomoki Toda},
+  title={{Voice Conversion Challenge 2020 –- Intra-lingual semi-parallel and cross-lingual voice conversion –-}},
+  year=2020,
+  booktitle={Proc. Joint Workshop for the Blizzard Challenge and Voice Conversion Challenge 2020},
+  pages={80--98},
+  doi={10.21437/VCC_BC.2020-14},
+  url={http://dx.doi.org/10.21437/VCC_BC.2020-14}
+}
+
+@inproceedings{Rohan2020,
+  author={
+  title={{Predictions of subjective ratings and spoofing assessments of voice conversion challenge 2020 submissions}},
+  year=2020,
+  booktitle={Proc. Joint Workshop for the Blizzard Challenge and Voice Conversion Challenge 2020},
+  pages={99--120},
+  doi={10.21437/VCC_BC.2020-15},
+  url={http://dx.doi.org/10.21437/VCC_BC.2020-15}
+}
+
+——————————————————————————————————————————————————————————————————————————————
+Data structure:
+
+1. Waveform samples used for evaluation:
+SOU/task1/XXXX.wav
+SOU/task2/XXXX.wav
+TAR/task1/XXXX.wav
+TAR/task2/XXXX.wav
+T01/task1/XXXX.wav
+.
+.
+.
+
+Note:In our experiment, we selected 5 samples under each converting condition for each task per team.
+The waveform samples are named in such a format : TXX/task1(2)/teamXX_TaskCategory-TargetSpeaker_SourceSpeaker_WaveformIndex.wav. TXX is the team index.
+For example: T14/task1/team14_intra-TEM1_SEM1_E30001.wav  (team14, intra lingual task (task1), the target speaker is TEM1, the source speaker is SEM1, the utterance number is E30001). In the files above , the source samples are marked as "team34**" under folder "SOU" and the target samples are marked as "ref**" under folder "TAR".
+
+2. VCC2020-listeningtest-info
+
+  2.1 VCC2020-listeningtest-info/VCC202-listeningtest-scores
+    2.1.1 VCC2020-listeningtest-info/VCC202-listeningtest-scores/VCC2020-scores-EnglishListeners.json:
+					evaluation scores of English Listeners
+    2.1.2 VCC2020-listeningtest-info/VCC202-listeningtest-scores/VCC2020-scores-JapaneseListeners.json:
+					evaluation scores of Japanese Listeners
+    2.1.3 VCC2020-listeningtest-info/VCC202-listeningtest-scores/VCC2020-scores-example.py:
+					An example to read the evaluation scores from the json files.
+
+	2.2 VCC2020-listeningtest-listeners
+    2.2.1 VCC2020-listeningtest-info/VCC2020-listeningtest-listeners/English_listeners.csv:  Information of listeners who speak English
+    2.2.2 VCC2020-listeningtest-info/VCC2020-listeningtest-listeners/Japanese_listeners.csv:  Information of listeners who speak Japanese
+
+  2.3 VCC2020-listeningtest-design
+    2.3.1 VCC2020-listeningtest-info/VCC2020-listeningtest-design/en_manifest_quality.csv:
+					manifest file used for design questions for quality evaluation using English listeners.
+					The format of each line is : abbreviation of the system for evaluation, abbreviation of the file for evaluation
+    2.3.2 VCC2020-listeningtest-info/VCC2020-listeningtest-design/en_manifest_similarity.csv:
+					manifest file used for design questions for quality evaluation using English listeners.
+					The format of each line is : abbreviation of the system for evaluation, abbreviation of the file for evaluation, abbreviation of the system for reference, abbreviation of the file for reference
+    2.3.3 VCC2020-listeningtest-info/VCC2020-listeningtest-design/jp_manifest_quality.csv:
+					manifest file used for design questions for quality evaluation using Japanese listeners.
+					The format of each line is : abbreviation of the system for evaluation, abbreviation of the file for evaluation
+    2.3.4 VCC2020-listeningtest-info/VCC2020-listeningtest-design/jp_manifest_similarity.csv:
+					manifest file used for design questions for quality evaluation using Japanese listeners.
+					The format of each line is : abbreviation of the system for evaluation, abbreviation of the file for evaluation, abbreviation of the system for reference, abbreviation of the file for reference
+    2.3.5 VCC2020-listeningtest-info/VCC2020-listeningtest-design/en_system_abbr.json:
+					system name abbreviation when using English listeners
+    2.3.6 VCC2020-listeningtest-info/VCC2020-listeningtest-design/jp_system_abbr.json:
+					system name abbreviation when using Japanese listeners
+
+——————————————————————————————————————————————————————————————————————————————
+
+COPYING:
+
+This Voice Conversion Challenge 2020 Listening Test Data contains two types of data - 1) audio and 2) listening test results. 
+
+Audio
+The audio included in this dataset is made available under the Open Database License: http://opendatacommons.org/licenses/odbl/1.0/. Any rights in individual contents of the database are licensed under the Database Contents License: http://opendatacommons.org/licenses/dbcl/1.0/
+
+Listening test results
+The listening test results are made available under Creative Commons Attribution License (CC-BY). 
+
+Regarding Creative Commons License: Attribution 4.0 International (CC BY 4.0), 
+please see https://creativecommons.org/licenses/by/4.0/
+
+THIS DATABASE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ARISING IN ANY WAY OUT OF THE USE OF THIS DATABASE, EVEN IF ADVISED OF THE 
+POSSIBILITY OF SUCH DAMAGE.
+			
+——————————————————————————————————————————————————————————————————————————————
+ACKNOWLEDGEMENTS:
+This work was partially supported by JST CREST Grants(JPMJCR18A6, VoicePersonae project, and JPMJCR19A3,CoAugmentation project), Japan, MEXT KAKENHI Grants(16H06302, 17H04687, 17H06101, 18H04120, 18H04112,18KT0051, 19K24373), Japan, the National Natural ScienceFoundation of China (Grant No.61871358) and Human-Robot Interaction Phase 1 (Grant No.19225 00054), National Research Foundation (NRF) Singapore under the National Robotics Programme and Programmatic Grant No.A1687b0033 from the Singapore Government’s Research, In-novation and Enterprise 2020 plan (Advanced Manufacturing and Engineering domain), and Academy of Finland (project no.309629)
+
